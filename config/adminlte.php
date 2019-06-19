@@ -119,14 +119,9 @@ return [
             'icon'    => 'share',
             'submenu' => [
                 [
-                    'text' => 'Profile',
-                    'url'  => 'admin/settings',
-                    'icon' => 'user',
-                ],
-                [
-                    'text' => 'Change Password',
-                    'url'  => 'admin/settings',
-                    'icon' => 'lock',
+                    'text' => 'Profiles',
+                    'url'  => 'users',
+                    'icon' => 'users',
                 ],
             ],
         ],
