@@ -45,9 +45,9 @@ class HomeController extends Controller
     public function buscarCerveja(Request $request)
     {
         $search = $request->get('search');
-
+        $user = auth::user();
         $beers = $this->beers->search($search);
 
-        return view('home', compact('beers'));
+        return view('home', compact('beers', 'user'));
     }
 }
